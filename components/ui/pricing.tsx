@@ -59,7 +59,7 @@ export function Pricing() {
 
   return (
     <section  className="py-24 px-4 md:px-6 lg:px-8  ">
-      
+      <h1 className="text-2xl  px-4 py-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-5xl leading-relaxed lg:leading-snug text-center mx-auto ">Pricing</h1>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center mb-12">
           <div className="flex items-center gap-2 p-1 mb-8 rounded-full border border-orange-200/50   dark:border-neutral-800/50 bg-white dark:bg-neutral-900">

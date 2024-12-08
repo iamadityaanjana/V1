@@ -12,7 +12,7 @@ import {
 export function Bento() {
   return (
     <>
-    <div className="h-[50vh] m-auto my-20">
+    <div className=" m-auto my-20">
     <h1 className="text-2xl  px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-5xl leading-relaxed lg:leading-snug text-center  mx-auto ">Features</h1>
     <BentoGrid className="max-w-4xl  my-40 mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (

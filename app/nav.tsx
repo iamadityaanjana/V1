@@ -9,7 +9,6 @@ export function Nav() {
     <div className="">
       <Navbar />
     </div>
-    
     </>
   );
 }

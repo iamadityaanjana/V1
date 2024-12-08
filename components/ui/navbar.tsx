@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import { useNavigate } from "react-router-dom"
 import { motion, useScroll, useMotionValueEvent } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { Home, LayoutGrid, CreditCard, FileText, Twitter, Github, Menu,LogIn } from 'lucide-react'
@@ -47,7 +48,7 @@ const navItems: NavItem[] = [
   },
   {
     title: "Login",
-    href: "#Login",
+    href: "/login",
     icon: <LogIn className="h-4 w-4" />
   },
 ]
@@ -68,7 +69,7 @@ export function Navbar() {
     }
     setLastScrollY(latest)
   })
-
+  const navigate = useNavigate();
   return (
     <motion.header 
       className="fixed top-7 left-0 right-0 z-50"
@@ -85,7 +86,9 @@ export function Navbar() {
                 <Link
                   
                   href={item.href}
-                  onClick={() => setActive(item.title)}
+                  onClick={() => setActive(item.title)
+                    
+                  }
                   className={cn(
                     "relative flex items-center gap-2 px-4 py-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 transition-colors hover:text-neutral-900 dark:hover:text-neutral-100",
                     active === item.title && "text-neutral-900 dark:text-neutral-100"
@@ -124,6 +127,7 @@ export function Navbar() {
                   {navItems.map((item) => (
                     <li key={item.title}>
                       <Link
+                        
                         href={item.href}
                         onClick={() => setActive(item.title)}
                         className={cn(

@@ -1,21 +1,21 @@
 "use client";
 import React from "react";
-import {Hero} from "@/app/hero"
-import {Nav} from "@/app/nav"
-import { ScrollIndicator } from "@/components/ui/scroll";
-import { Pricing } from "@/components/ui/pricing";
-import { Bento } from "./bento";
+import { lazy } from 'react';
+import {BrowserRouter , Routes, Route ,useNavigate} from 'react-router-dom'
+const Landing = lazy(()=>import('@/components/landing'))
+const Login = lazy(()=>import('@/components/login'))
+
 export default function Home() {
   return (
     <>
-    <div className=" w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] ">
-    <Nav/>
-    <Hero/>
-    <ScrollIndicator/>
-    <Bento/>
-    <Pricing/>
-    <div className="h-[200rem]"></div></div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Landing/>}/>
+        <Route path='/login' element={<Login/>}/>
+      </Routes>
+    </BrowserRouter></>
   );
 }
+
+
 

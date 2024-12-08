@@ -36,15 +36,15 @@ export function Bento() {
 // );
 const items = [
   {
-    title: "Extending the use of Ai",
-    description: "Natural language to tasks.",
+    title: "Harness the Power of AI",
+    description: "Seamlessly transform natural language into actionable tasks.",
     header: <Tasks />,
     className: "md:col-span-1",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Why type when you can talk",
-    description: "Natural voices to tasks.",
+    title: "Talk, Don’t Type",
+    description: "Convert your voice into efficient task execution.",
     header: <Audio />,
     className: "md:col-span-1",
     icon: <IconWaveSine className="h-4 w-4 text-neutral-500" />,

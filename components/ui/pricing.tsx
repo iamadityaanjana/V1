@@ -19,37 +19,36 @@ const plans: PricingPlan[] = [
   {
     name: "Free plan",
     price: 0,
-    description: "Basic features for up to 10 users.",
+    description: "To get familiar with app",
     features: [
-      "Access to basic features",
-      "Basic reporting and analytics",
-      "Up to 10 individual users",
-      "20GB individual data each user"
+      "Text to tasks",
+      "Upto 5 tasks/week",
+      "Smart responses"
     ]
   },
   {
     name: "Basic plan",
     price: 5,
-    description: "Basic features for up to 20 users.",
+    description: "Daily scheduling.",
     features: [
-      "Everything in Basic plus...",
-      "20+ integrations",
-      "Advanced reporting and analytics",
-      "Up to 20 individual users",
-      "40GB individual data each user"
+      "Upto 51 tasks/week",
+      "Audio to tasks",
+      "Sync with Google and Apple Caledar",
+      "Context aware chats",
+      "Weather and internet searches"
     ],
     isPopular: true
   },
   {
     name: "Pro plan",
     price: 11,
-    description: "Advanced features + unlimited users.",
+    description: "Advanced features .",
     features: [
-      "Everything in Business plus...",
-      "Advanced custom fields",
-      "Audit log and data history",
-      "Unlimited individual users",
-      "Unlimited individual data"
+      "Everything in Basic Plan",
+      "Upto 201 tasks/week",
+      "Image generation (100 images/month)",
+      "Smart conflict aware scheduling",
+      "Supports saving bookmarks"
     ]
   }
 ]

@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { useNavigate } from "react-router-dom"
 import { motion, useScroll, useMotionValueEvent } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { Home, LayoutGrid, CreditCard, FileText, Twitter, Github, Menu,LogIn } from 'lucide-react'
@@ -69,7 +68,6 @@ export function Navbar() {
     }
     setLastScrollY(latest)
   })
-  const navigate = useNavigate();
   return (
     <motion.header 
       className="fixed top-7 left-0 right-0 z-50"

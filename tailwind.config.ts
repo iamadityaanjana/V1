@@ -7,7 +7,7 @@ const {
 import type { Config } from "tailwindcss";
 
 export default {
-	darkMode: ["media", "class"],
+	darkMode: "media",
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -21,16 +21,7 @@ export default {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
-  		'keyframes': {
-  			shimmer: {
-  				from: {
-  					'backgroundPosition': '0 0'
-  				},
-  				to: {
-  					'backgroundPosition': '-200% 0'
-  				}
-  			}
-  		},
+  		
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -94,7 +85,15 @@ export default {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+			  shimmer: {
+				from: {
+					'backgroundPosition': '0 0'
+				},
+				to: {
+					'backgroundPosition': '-200% 0'
+				}
+			}
   		}
   	}
   },

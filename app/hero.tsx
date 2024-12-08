@@ -5,6 +5,7 @@ import { HeroHighlight} from "@/components/ui/hero-highlight";
 
 export function Hero(){
     return (
+      <>
         <HeroHighlight>
             <motion.h1
         initial={{
@@ -31,6 +32,7 @@ export function Hero(){
       </motion.h1>
       
     </HeroHighlight>
+    <div id="Features"></div></>
     );
 }
 

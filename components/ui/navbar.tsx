@@ -4,7 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import { motion, useScroll, useMotionValueEvent } from "framer-motion"
 import { cn } from "@/lib/utils"
-import { Home, LayoutGrid, CreditCard, FileText, Twitter, Github, Menu } from 'lucide-react'
+import { Home, LayoutGrid, CreditCard, FileText, Twitter, Github, Menu,LogIn } from 'lucide-react'
 import {
   Sheet,
   SheetContent,
@@ -41,15 +41,14 @@ const navItems: NavItem[] = [
   },
   {
     title: "Twitter",
-    href: "https://twitter.com/yourusername",
+    href: "https://twitter.com/iamAdityaAnjana",
     icon: <Twitter className="h-4 w-4" />,
     newTab: true
   },
   {
-    title: "GitHub",
-    href: "https://github.com/yourusername",
-    icon: <Github className="h-4 w-4" />,
-    newTab: true
+    title: "Login",
+    href: "#Login",
+    icon: <LogIn className="h-4 w-4" />
   },
 ]
 
@@ -84,6 +83,7 @@ export function Navbar() {
             {navItems.map((item) => (
               <li key={item.title}>
                 <Link
+                  
                   href={item.href}
                   onClick={() => setActive(item.title)}
                   className={cn(
